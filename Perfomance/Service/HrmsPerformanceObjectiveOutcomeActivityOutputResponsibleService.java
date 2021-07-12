@@ -1,0 +1,37 @@
+package com.Hrms.Perfomance.Service;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.Hrms.Perfomance.DTO.PerformanceObjectiveOutcomeActivityOutputResponsibleResponse;
+import com.Hrms.Perfomance.Entity.HrmsPerformanceObjectiveOutcomeActivityOutputResponsible;
+
+@Service
+public interface HrmsPerformanceObjectiveOutcomeActivityOutputResponsibleService {
+
+	public ResponseEntity<HrmsPerformanceObjectiveOutcomeActivityOutputResponsible> addPerformanceObjectiveOutcomeActivityOutputResponsible(
+			HrmsPerformanceObjectiveOutcomeActivityOutputResponsible hrmsPerformanceObjectiveOutcomeActivityOutputResponsible);
+
+	public ResponseEntity<PerformanceObjectiveOutcomeActivityOutputResponsibleResponse> getPerformanceObjectiveOutcomeActivityOutputResponsibleById(
+			int id);
+
+	public ResponseEntity<HrmsPerformanceObjectiveOutcomeActivityOutputResponsible> updatePerformanceObjectiveOutcomeActivityOutputResponsible(
+			HrmsPerformanceObjectiveOutcomeActivityOutputResponsible hrmsPerformanceObjectiveOutcomeActivityOutputResponsible,
+			int id);
+
+	public ResponseEntity<?> deletePerformanceObjectiveOutcomeActivityOutputResponsible(int id);
+
+	public ResponseEntity<List<PerformanceObjectiveOutcomeActivityOutputResponsibleResponse>> getAllPerformanceObjectiveOutcomeActivityOutputResponsible();
+
+	public ResponseEntity<List<PerformanceObjectiveOutcomeActivityOutputResponsibleResponse>> getAllPerformanceObjectiveOutcomeActivityOutputResponsibleByTargetid(
+			int targetid);
+
+	public ResponseEntity<List<PerformanceObjectiveOutcomeActivityOutputResponsibleResponse>> getAllPerformanceObjectiveOutcomeActivityOutputResponsibleByTargetIdAndUnitId(
+			int targetid, int unitid);
+
+	public ResponseEntity<List<PerformanceObjectiveOutcomeActivityOutputResponsibleResponse>> getAllPerformanceObjectiveOutcomeActivityOutputResponsibleByUnitid(
+			int unitid);
+
+}

@@ -1,0 +1,28 @@
+package com.Hrms.Payroll.Service;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.Hrms.Payroll.DTO.PayrollContributionMandatorySocialSecuritySchemeResponse;
+import com.Hrms.Payroll.Entity.HrmsPayrollContributionMandatorySocialSecurityScheme;
+
+@Service
+public interface HrmsPayrollContributionMandatorySocialSecuritySchemeService {
+
+	public ResponseEntity<HrmsPayrollContributionMandatorySocialSecurityScheme> addPayrollContributionMandatorySocialSecurityScheme(
+			HrmsPayrollContributionMandatorySocialSecurityScheme hrmsPayrollContributionMandatorySocialSecurityScheme);
+
+	public ResponseEntity<PayrollContributionMandatorySocialSecuritySchemeResponse> getPayrollContributionMandatorySocialSecuritySchemeById(
+			int id);
+
+	public ResponseEntity<HrmsPayrollContributionMandatorySocialSecurityScheme> updatePayrollContributionMandatorySocialSecurityScheme(
+			HrmsPayrollContributionMandatorySocialSecurityScheme hrmsPayrollContributionMandatorySocialSecurityScheme,
+			int id);
+
+	public ResponseEntity<?> deletePayrollContributionMandatorySocialSecurityScheme(int id);
+
+	public ResponseEntity<List<PayrollContributionMandatorySocialSecuritySchemeResponse>> getAllPayrollContributionMandatorySocialSecurityScheme();
+
+}

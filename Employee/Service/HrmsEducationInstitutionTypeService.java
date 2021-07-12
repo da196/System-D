@@ -1,0 +1,15 @@
+package com.Hrms.Employee.Service;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.Hrms.Employee.Entity.HrmsEducationInstitutionType;
+
+@Service
+public interface HrmsEducationInstitutionTypeService {
+
+	public ResponseEntity<List<HrmsEducationInstitutionType>> listEducationInstitutionType();
+
+}
